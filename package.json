@@ -39,10 +39,8 @@
     "gulp-serve": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
-    "path": "^0.12.7"
-  },
-  "dependencies": {
     "gulp-util": "^3.0.8",
-    "node-notifier": "^5.4.3"
+    "node-notifier": "^6.0.0",
+    "path": "^0.12.7"
   }
 }
