@@ -20,7 +20,7 @@ or use [unpkg](https://unpkg.com/@mezhevykh/localstorage-wrapper/build/index.js)
 
 ## API
 
-#### Set item:
+**Set item:**
 
 ```js
 store.set('username', 'Test');
@@ -28,7 +28,7 @@ store.set('username', 'Test');
 
 ---
 
-#### Get item:
+**Get item:**
 
 ```js
 store.get('username');
@@ -36,7 +36,7 @@ store.get('username');
 
 ---
 
-#### Get all items:
+**Get all items:**
 
 ```js
 store.getAll();
@@ -44,7 +44,7 @@ store.getAll();
 
 ---
 
-#### Remove item:
+**Remove item:**
 
 ```js
 store.remove('username');
@@ -52,7 +52,7 @@ store.remove('username');
 
 ---
 
-#### Remove all items:
+**Remove all items:**
 
 ```js
 store.removeAll();
