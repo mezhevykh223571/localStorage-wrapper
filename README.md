@@ -2,6 +2,8 @@
 [![GitHub license](https://img.shields.io/github/license/mezhevykh223571/localStorage-wrapper?style=flat-square)](https://github.com/mezhevykh223571/localStorage-wrapper/blob/master/LICENSE)
 [![](https://data.jsdelivr.com/v1/package/npm/@mezhevykh/localstorage-wrapper/badge)](https://www.jsdelivr.com/package/npm/@mezhevykh/localstorage-wrapper)
 
+Simple wrapper for localStorage
+
 ## Installation
 
 **Download**
