@@ -1,5 +1,5 @@
 {
-  "name": "localstorage",
+  "name": "@mezhevykh/localstorage-wrapper",
   "author": {
     "name": "Yevhenii Mezhevykh",
     "email": "yevhenii.mezhevykh@gmail.com",
@@ -9,19 +9,21 @@
     "url": "https://github.com/mezhevykh223571/localStorage-wrapper/issues"
   },
   "homepage": "https://github.com/mezhevykh223571/localStorage-wrapper#readme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
-    "localStorage"
+    "localStorage",
+    "storage",
+    "cookie",
+    "data"
   ],
-  "description": "",
+  "description": "Simple wrapper for localStorage",
   "repository": {
     "type": "git",
     "url": "https://github.com/mezhevykh223571/localStorage-wrapper.git"
   },
   "main": "src/main.js",
   "scripts": {
-    "publish": "npm publish --tag=next && git push origin --all; git push origin --tags",
     "build:prod": "gulp build --live",
     "build:dev": "gulp build",
     "watch": "gulp watch"
