@@ -1,8 +1,11 @@
 import gulp from 'gulp';
 import serve from 'gulp-serve';
 import del from 'del';
+import rollup from 'gulp-better-rollup';
+import babel from 'rollup-plugin-babel';
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 import plumber from 'gulp-plumber';
-import babel from 'gulp-babel';
 import gif from 'gulp-if';
 import sourcemaps from 'gulp-sourcemaps';
 import terser from 'gulp-terser';
@@ -34,7 +37,10 @@ function clean() {
 function script() {
   return gulp
     .src(`${config.srcDirectory}/*.js`)
-    .pipe(babel())
+    .pipe(rollup({
+        plugins: [babel(), resolve(), commonjs()]
+      }, 'umd'
+    ))
     .pipe(plumber({ errorHandler: handleError }))
     .pipe(gif(!liveEnv, sourcemaps.init()))
     .pipe(concat(config.bundleName))
